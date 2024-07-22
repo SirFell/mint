@@ -86,7 +86,7 @@ pub unsafe fn initialize() -> Result<()> {
     )?;
     HookUFunctionBind.enable()?;
 
-    server_list::init_hooks()?;
+    // server_list::init_hooks()?;
 
     if !globals().meta.config.disable_fix_exploding_gas {
         if let Ok(gas_fix) = &globals().resolution.gas_fix {
